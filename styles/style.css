@@ -1,0 +1,495 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+body {
+  background-color: #f5a8ff;
+  font-family: 'Jost', sans-serif;
+  letter-spacing: -1px;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.button {
+  width: 255px;
+  height: 69px;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 25px;
+  background-color: #F912FD;
+  color: #ffffff;
+  outline: 0;
+  text-decoration: none;
+  display: block;
+  border: 1px solid rgb(41, 39, 39);
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.button:hover {
+  background-color: #a915ac;
+}
+
+.button.white-button {
+  background-color: #ffffff;
+}
+
+.button.white-button:hover {
+  background-color: #F912FD;
+}
+
+.main {
+  overflow: hidden;
+  position: relative;
+}
+
+.black-block {
+  position: absolute;
+  width: 477px;
+  height: 960px;
+  top: 0;
+  background-color: #000000;
+  z-index: -2;
+  right: calc(50% - 780px);
+}
+
+.header {
+  padding: 46px 0;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 129px;
+  vertical-align: bottom;
+}
+
+.logo a {
+    display: inline-block; /* Чтобы ссылка правильно оборачивала изображение */
+}
+
+.logo a:hover img {
+    opacity: 0.8; /* Эффект при наведении */
+    transition: opacity 0.3s ease; /* Плавное изменение */
+}
+.menu {
+  margin-left: 177px;
+  margin-right: auto;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 40px; 
+  align-items: center;
+}
+
+.menu li:nth-child(4) {
+  margin-left: 40px; 
+}
+
+.menu li:last-child {
+  margin-left: 200px; 
+}
+
+.menu ul a {
+  text-shadow: 2px 2px 4px grey;
+  font-family: 'Jost', sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  position: relative;
+  padding: 5px 0;
+}
+
+.menu ul a:hover {
+  color: #F912FD;
+}
+
+.menu ul li:nth-child(2) a:hover {
+  color: #00B2FF;
+}
+
+.main-content {
+  padding-top: 100px;
+  padding-bottom: 175px;
+}
+
+.main-content .container {
+  position: relative;
+}
+.main-info {
+  max-width: 755px;
+}
+
+.main-info h1 {
+  font-size: 80px;
+  line-height: 100%;
+  margin-bottom: 40px;
+  font-weight: normal;
+}
+
+.main-info p {
+  font-size: 24px;
+  line-height: 120%;
+  color: #464047;
+  max-width: 450px;
+  margin-bottom: 60px;
+}
+
+.main-image {
+  position: absolute;
+  top: -110px;
+  max-width: 849px;
+  max-height: 849px;
+  right: -115px;
+  z-index: -1;
+}
+
+.aromatics {
+  background-color: #000000;
+  padding: 130px 0;
+}
+
+
+.aromatics h2 {
+  font-size: 65px;
+  font-weight: normal;
+}
+.aromatics-content {
+  display: flex;
+  padding-top: 60px;
+}
+
+.aromatics-items {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.aromatic {
+  background-color: #f5a8ff;
+  padding: 20px;
+  display: flex;
+  max-width: 900px;
+}
+
+.aromatic img {
+  max-width: 200px;
+}
+
+.aromatic-details {
+  margin-left: 24px;
+  display: flex;
+  flex-direction: column;
+}
+.aromatic-details h4 {
+  font-size: 30px;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+.aromatic-details p {
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: normal;
+  color: #464047;
+  height: 100px;
+}
+
+.aromatic-action {
+  margin-top: auto;
+}
+
+.aromatic-action ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.aromatic-period {
+  font-size: 16px;
+  line-height: 120%;
+  color: #464047;
+  margin-bottom: 5px;
+}
+
+.aromatic-price {
+  font-size: 24px;
+  line-height: 120%;
+}
+
+.aromatic-price span {
+  font-size: 16px;
+  line-height: 120%;
+  color: #d4d4d4;
+}
+
+.aromatic-action .button {
+  width: 100%;
+  background-color: #f912fd;
+  color: #ffffff;
+}
+
+.aromatic-action .button:hover {
+  background-color: #a915ac;
+}
+.order {
+  padding-top: 159px;
+  padding-bottom: 130px;
+}
+
+.order .container {
+  position: relative;
+}
+
+.order img {
+  position: absolute;
+  max-width: 1000px;
+  max-height: 1000px;
+  top: -10px;
+  left: -200px;
+}
+
+.order form {
+  margin-left: 714px;
+  max-width: 486px;
+}
+
+
+.order-form .button {
+  width: 100%;
+  height: 69px;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 25px;
+  background-color: #F912FD;
+  color: #ffffff;
+  outline: 0;
+  text-decoration: none;
+  display: block;
+  border: 1px solid rgb(41, 39, 39);
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.order-form .button:hover {
+  background-color: #a915ac;
+}
+
+
+.order h3 {
+  font-weight: normal;
+  font-size: 65px;
+  line-height: 100%;
+  margin-bottom: 40px;
+}
+
+.order p {
+  font-size: 24px;
+  line-height: 120%;
+  color: #464047;
+  margin-bottom: 60px;
+  max-width: 455px;
+}
+
+.order-form {
+  width: 344px;
+}
+
+::placeholder {
+  color: #464047;
+}
+
+.order-form input {
+  width: 100%;
+  height: 68px;
+  padding: 24px 20px;
+  box-sizing: border-box;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  margin-bottom: 15px;
+  font-size: 16px;
+  outline: none;
+}
+
+
+.footer {
+  background-color: #f5a8ff;
+  padding: 40px 0;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.logo-with-rights {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.rights {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.3;
+  color: #fff;
+  text-align: left;
+}
+
+.contact-info {
+  text-align: right;
+}
+
+.contact-info h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: normal;
+  color: #fff;
+}
+
+.contact-info ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 20px 40px;
+}
+
+.contact-info li {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.contact-info a {
+  color: #F912FD;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-info a:hover {
+  color: #a915ac;
+  text-decoration: underline;
+}
+
+/* Анимация смены темы */
+body, .aromatic {
+  transition: background-color 0.5s ease;
+}
+
+.button {
+  transition: background-color 0.5s ease;
+}
+
+/* Стиль для активной кнопки фильтра */
+.menu ul li.active a {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Основные стили тем */
+body.her-theme {
+  background-color: #f5a8ff;
+}
+
+body.him-theme {
+  background-color: #a8e1ff;
+}
+
+.her-theme .button {
+  background-color: #F912FD;
+}
+
+.her-theme .button:hover {
+  background-color: #a915ac;
+}
+
+.him-theme .button {
+  background-color: #00B2FF;
+}
+
+.him-theme .button:hover {
+  background-color: #0085c0;
+}
+
+.her-theme .aromatic {
+  background-color: #f5a8ff;
+}
+
+.him-theme .aromatic {
+  background-color: #a8e1ff;
+}
+
+.him-theme .contact-info a {
+  color: #0085c0;
+}
+
+.her-theme .contact-info a {
+  color: #F912FD;
+}
+
+.him-theme .button:hover {
+  background-color: #0085c0;
+}
+
+.her-theme .menu ul a:hover {
+  color: #F912FD;
+}
+
+.her-theme .menu ul li:nth-child(2) a:hover {
+  color: #00B2FF;
+}
+
+
+.him-theme .menu ul a:hover {
+  color: #00B2FF;
+}
+
+.him-theme .menu ul li:first-child  a:hover {
+  color: #F912FD;
+}
+/* Анимации */
+body, .aromatic, .button {
+  transition: all 0.5s ease;
+}
+
+/* Активный пункт меню */
+.menu li.active a {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.her-theme .menu li.active a {
+  color: #F912FD;
+}
+
+.him-theme .menu li.active a {
+  color: #00B2FF;
+}
+
+
