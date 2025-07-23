@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="/manifest.json">  <!-- Слеш в начале важен! -->
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">  <!-- Пример, если favicon лежит в папке img -->
     <meta name="theme-color" content="#F912FD">
     <title>Покупка элитных духов</title>
     <meta charset="UTF-8" />
@@ -361,17 +362,12 @@
 </footer>
 <script>
   if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/sw.js')
-        .then(registration => {
-          console.log('ServiceWorker зарегистрирован:', registration.scope);
-        })
-        .catch(error => {
-          console.error('Ошибка регистрации ServiceWorker:', error);
-        });
-    });
-  }
+  navigator.serviceWorker.register('/sw.js')  // Обратите внимание на слеш в начале
+    .then(registration => console.log('SW registered'))
+    .catch(err => console.error('SW registration failed: ', err));
+}
 </script>
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   // Элементы управления
